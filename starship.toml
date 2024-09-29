@@ -1,0 +1,54 @@
+# Get editor completions based on the config schema
+"$schema" = 'https://starship.rs/config-schema.json'
+
+# Inserts a blank line between shell prompts
+scan_timeout = 10
+
+add_newline = false
+
+[directory]
+truncation_length = 1
+truncation_symbol = '…/'
+
+# Replace the '❯' symbol in the prompt with '➜'
+[character] 
+success_symbol = '[➜](bold green)'
+error_symbol = '[➜](bold red)'
+
+# Disable the package module, hiding it from the prompt completely
+[c]
+format = ":[$symbol($version )]($style)"
+
+[cmake]
+format = ":CM [($version )]($style)"
+
+[ruby]
+format = ":RB [($version )]($style)"
+
+[golang]
+format = ":Go [($version )]($style)"
+
+[java]
+format = ":[$symbol($version )]($style)"
+
+[lua]
+format = ":Lua [($version )]($style)"
+
+[nodejs]
+format = ":NJ [($version )]($style)"
+
+[perl]
+format = ":[$symbol($version )]($style)"
+
+[php]
+format = ":[$symbol($version )]($style)"
+
+[python]
+format = ":PY [($version )]($style)"
+
+[rust]
+format = ":RS [($version )]($style)"
+
+
+
+
